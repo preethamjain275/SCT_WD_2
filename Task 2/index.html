@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic OOP Calculator</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font for a cleaner look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="calculator-body">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <!-- Utility Row -->
+            <button class="btn utility-btn" data-action="clear">AC</button>
+            <button class="btn utility-btn" data-action="sign">+/-</button>
+            <button class="btn utility-btn" data-action="percent">%</button>
+            <button class="btn operator-btn" data-action="divide">/</button>
+            
+            <!-- Numbers & Operators -->
+            <button class="btn number-btn" data-number="7">7</button>
+            <button class="btn number-btn" data-number="8">8</button>
+            <button class="btn number-btn" data-number="9">9</button>
+            <button class="btn operator-btn" data-action="multiply">x</button>
+            
+            <button class="btn number-btn" data-number="4">4</button>
+            <button class="btn number-btn" data-number="5">5</button>
+            <button class="btn number-btn" data-number="6">6</button>
+            <button class="btn operator-btn" data-action="subtract">-</button>
+            
+            <button class="btn number-btn" data-number="1">1</button>
+            <button class="btn number-btn" data-number="2">2</button>
+            <button class="btn number-btn" data-number="3">3</button>
+            <button class="btn operator-btn" data-action="add">+</button>
+            
+            <!-- Bottom Row -->
+            <button class="btn number-btn" data-number="0" style="grid-column: span 2;">0</button>
+            <button class="btn number-btn" data-number=".">.</button>
+            <button class="btn operator-btn" data-action="calculate">=</button>
+        </div>
+    </div>
+
+    <!-- Link the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
